@@ -1,0 +1,4 @@
+# when installing a new library, use python -m pip install
+
+pypdf==6.1.3
+cryptography>=3.1

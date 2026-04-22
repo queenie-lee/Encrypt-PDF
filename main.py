@@ -24,7 +24,8 @@ def app(args):
         input_files = os.listdir(source)
 
         for file in input_files:
-            read_encrypt_save_file(mode, file, password, destination, source, completed)
+            if file.endswith(".pdf"):  # only PDF files will be read
+                read_encrypt_save_file(mode, file, password, destination, source, completed)
         return 0
 
     else:
